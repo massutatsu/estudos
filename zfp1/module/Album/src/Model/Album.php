@@ -44,18 +44,18 @@ class Album implements InputFilterAwareInterface
         $inputFilter->add([
             'name' => 'id',
             'required' => true,
-            'filters' => [
-                ['name' => ToInt::class],
-            ],
+//             'filters' => [
+//                 ['name' => ToInt::class],
+//             ],
         ]);
 
         $inputFilter->add([
             'name' => 'artist',
             'required' => true,
-            'filters' => [
-                ['name' => StripTags::class],
-                ['name' => StringTrim::class],
-            ],
+//             'filters' => [
+//                 ['name' => StripTags::class],
+//                 ['name' => StringTrim::class],
+//             ],
             'validators' => [
                 [
                     'name' => StringLength::class,
@@ -71,10 +71,10 @@ class Album implements InputFilterAwareInterface
         $inputFilter->add([
             'name' => 'title',
             'required' => true,
-            'filters' => [
-                ['name' => StripTags::class],
-                ['name' => StringTrim::class],
-            ],
+//             'filters' => [
+//                 ['name' => StripTags::class],
+//                 ['name' => StringTrim::class],
+//             ],
             'validators' => [
                 [
                     'name' => StringLength::class,
