@@ -21,15 +21,15 @@ class AlbumTable
     public function getAlbum($id)
     {
         $id = (int) $id;
-        $rowset = $this->tableGateway->select(['id'=>$id]);
+        $rowset = $this->tableGateway->select(['id' => $id]);
         $row = $rowset->current();
-
         if (! $row) {
             throw new RuntimeException(sprintf(
                 'Could not find row with identifier %d',
                 $id
             ));
         }
+
         return $row;
     }
 
@@ -37,7 +37,7 @@ class AlbumTable
     {
         $data = [
             'artist' => $album->artist,
-            'title' => $album->title
+            'title'  => $album->title,
         ];
 
         $id = (int) $album->id;
@@ -61,6 +61,4 @@ class AlbumTable
     {
         $this->tableGateway->delete(['id' => (int) $id]);
     }
-
-
 }
