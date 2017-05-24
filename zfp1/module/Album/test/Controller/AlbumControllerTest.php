@@ -7,7 +7,7 @@ use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class AlbumControllerTest extends AbstractHttpControllerTestCase
 {
-    protected $traceError = false;
+    protected $traceError = true;
 
     public function setUp()
     {
