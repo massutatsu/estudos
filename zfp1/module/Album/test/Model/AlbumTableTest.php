@@ -3,7 +3,7 @@ namespace AlbumTest\Model;
 
 use Album\Model\AlbumTable;
 use Album\Model\Album;
-use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestCase as TestCase;
 use RuntimeException;
 use Zend\Db\ResultSet\ResultSetInterface;
 use Zend\Db\TableGateway\TableGatewayInterface;
