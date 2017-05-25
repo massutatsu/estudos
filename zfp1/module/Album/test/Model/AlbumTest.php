@@ -2,9 +2,9 @@
 namespace AlbumTest\Model;
 
 use Album\Model\Album;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase as TesteCase;
 
-class AlbumTest extends TestCase
+class AlbumTest extends TesteCase
 {
     public function testInitialAlbumValuesAreNull()
     {
