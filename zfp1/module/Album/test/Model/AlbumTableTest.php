@@ -1,14 +1,15 @@
 <?php
 namespace AlbumTest\Model;
+declare(strict_types=1);
 
 use Album\Model\AlbumTable;
 use Album\Model\Album;
-use PHPUnit_Framework_TestCase as TesteCase;
+use PHPUnit\Framework\TestCase;
 use RuntimeException;
 use Zend\Db\ResultSet\ResultSetInterface;
 use Zend\Db\TableGateway\TableGatewayInterface;
 
-class AlbumTableTest extends TesteCase
+class AlbumTableTest extends TestCase
 {
     protected function setUp()
     {

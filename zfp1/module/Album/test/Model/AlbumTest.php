@@ -1,10 +1,10 @@
 <?php
 namespace AlbumTest\Model;
-
+declare(strict_types=1);
 use Album\Model\Album;
-use PHPUnit_Framework_TestCase as TesteCase;
+use PHPUnit\Framework\TestCase;
 
-class AlbumTest extends TesteCase
+class AlbumTest extends TestCase
 {
     public function testInitialAlbumValuesAreNull()
     {
