@@ -1,6 +1,5 @@
 <?php
 namespace AlbumTest\Model;
-declare(strict_types=1);
 
 use Album\Model\AlbumTable;
 use Album\Model\Album;

@@ -1,6 +1,6 @@
 <?php
 namespace AlbumTest\Model;
-declare(strict_types=1);
+
 use Album\Model\Album;
 use PHPUnit\Framework\TestCase;
 
