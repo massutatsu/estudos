@@ -3,7 +3,7 @@ namespace AlbumTest\Model;
 
 use Album\Model\AlbumTable;
 use Album\Model\Album;
-use PHPUnit\Framework\TestCase as TestCase;
+use PHPUnit_Framework_TestCase as TestCase;
 use RuntimeException;
 use Zend\Db\ResultSet\ResultSetInterface;
 use Zend\Db\TableGateway\TableGatewayInterface;
@@ -23,7 +23,6 @@ class AlbumTableTest extends TestCase
 
         $this->assertSame($resultSet, $this->albumTable->fetchAll());
     }
-
     public function testCanDeleteAnAlbumByItsId()
     {
         $this->tableGateway->delete(['id' => 123])->shouldBeCalled();
